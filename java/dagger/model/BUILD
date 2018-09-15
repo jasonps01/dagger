@@ -19,6 +19,7 @@ package(default_visibility = ["//:src"])
 
 load(
     "//:build_defs.bzl",
+    "DISABLE_GUAVA_BETA_CHECKER",
     "DOCLINT_HTML_AND_SYNTAX",
     "DOCLINT_REFERENCES",
 )
@@ -36,7 +37,7 @@ filegroup(
 java_library(
     name = "model",
     srcs = [":model-srcs"],
-    javacopts = DOCLINT_HTML_AND_SYNTAX + DOCLINT_REFERENCES,
+    javacopts = DOCLINT_HTML_AND_SYNTAX + DOCLINT_REFERENCES + DISABLE_GUAVA_BETA_CHECKER,
     deps = [
         "//java/dagger:core",
         "//java/dagger/internal/codegen:shared-with-spi",
