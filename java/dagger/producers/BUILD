@@ -19,6 +19,7 @@ package(default_visibility = ["//:src"])
 
 load(
     "//:build_defs.bzl",
+    "DISABLE_GUAVA_BETA_CHECKER",
     "DOCLINT_HTML_AND_SYNTAX",
     "DOCLINT_REFERENCES",
     "SOURCE_7_TARGET_7",
