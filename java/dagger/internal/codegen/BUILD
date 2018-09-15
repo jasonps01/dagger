@@ -337,7 +337,6 @@ java_library(
         "ProductionExecutorModuleProcessingStep.java",
     ],
     plugins = CODEGEN_PLUGINS,
-    resource_jars = [":processor_manifest_files.jar"],
     tags = ["maven_coordinates=com.google.dagger:dagger-compiler:" + POM_VERSION],
     deps = CODEGEN_DEPS + [
         ":base",
