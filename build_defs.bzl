@@ -19,3 +19,6 @@ DOCLINT_HTML_AND_SYNTAX = ["-Xdoclint:html,syntax"]
 DOCLINT_REFERENCES = ["-Xdoclint:reference"]
 
 SOURCE_7_TARGET_7 = ["-source 1.7 -target 1.7"]
+
+DISABLE_GUAVA_BETA_CHECKER = ["-XepDisableAllChecks", "-Xep:BetaApi:ERROR"]
+
