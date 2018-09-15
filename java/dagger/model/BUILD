@@ -53,6 +53,7 @@ java_library(
 java_library(
     name = "internal-proxies",
     srcs = INTERNAL_PROXIES,
+    javacopts = DISABLE_GUAVA_BETA_CHECKER,
     tags = ["maven:merged"],
     deps = [
         ":model",
